@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        border: 1px solid black;
+        height: max-content;
+        width: 100%;
+        background-color: lightcoral;
+        
+    }
+    .main0{
+        background-color: lightblue;
+        width: fit-content;
+    }
+    .ok1{
+        /* border: 2px solid black; */
+        height: max-content;
+        width: fit-content;
+        display: flex;
+    }
+    .ok2{
+        /* border: 2px solid black; */
+        height: max-content;
+        width: fit-content;
+        display: flex;
+    }
+    .ok3{
+        /* border: 2px solid black; */
+        height: max-content;
+        width: fit-content;
+        display: flex;
+    }
+    .ok4{
+        /* border: 2px solid black; */
+        height: max-content;
+        width: fit-content;
+        display: flex;
+    }
+    @media(max-width:375px){
+        .main0{
+            width: 100%;
+        }
+        .ok3{
+            display: block;
+        }
+    }
+    @media(max-width:320px){
+        .ok4{
+            display: block;
+        }
+    }
+</style>
+<body>
+    <div class="main">
+
+        <center>
+
+            <div class="main0">
+                
+                <div class="ok1">
+            <h1>Name:-</h1>
+            <h1 id="f1"></h1>
+        </div>
+        
+        <div class="ok2">
+        <h1>Age:-</h1>
+        <h1 id="f2"></h1>
+    </div>
+
+    <div class="ok3">
+        <h1>E-mail:-</h1>
+        <h1 id="f3"></h1>
+    </div>
+
+    <div class="ok4">
+        <h1>Password:-</h1>
+        <h1 id="f4"></h1>
+    </div>
+    
+</div>
+</center>
+</div>
+
+</body>
+<script>
+    document.getElementById("f1").innerHTML=sessionStorage.getItem("d1")
+    document.getElementById("f2").innerHTML=sessionStorage.getItem("d2")
+    document.getElementById("f3").innerHTML=sessionStorage.getItem("d3")
+    document.getElementById("f4").innerHTML=sessionStorage.getItem("d4")
+</script>
+<script src="./java/java.js"></script>
+</html>
