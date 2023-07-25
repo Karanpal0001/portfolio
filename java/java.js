@@ -1,5 +1,5 @@
 function ok(){
-    window.location.href="ok2.html"
+    window.location.href="index-2.html"
 
     a=document.getElementById("hr6").value
     sessionStorage.setItem("d1",a)
